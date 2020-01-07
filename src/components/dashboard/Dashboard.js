@@ -24,7 +24,7 @@ class Dashboard extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		projects: state.projectReducer.projectsData
+		projects: state.project.projects
 	};
 };
 

@@ -1,5 +1,5 @@
-const initialState = {
-	projectsData: [
+const initState = {
+	projects: [
 		{ id: '1', title: 'write purchase order', content: 'things I need to do' },
 		{
 			id: '2',
@@ -10,12 +10,17 @@ const initialState = {
 	]
 };
 
-const projectReducer = (state = initialState, action) => {
+const projectReducer = (state = initState, action) => {
 	switch (action.type) {
-		case 'CREATE_PROJECT':
-			console.log('created project', action.project);
+		case 'CREATE_PROJECT_SUCCESS':
+			console.log('create project success');
+			return state;
+		case 'CREATE_PROJECT_ERROR':
+			console.log('create project error');
+			return state;
+		default:
+			return state;
 	}
-	return state;
 };
 
 export default projectReducer;
