@@ -1,0 +1,81 @@
+[debug] [2020-01-08T20:59:45.541Z] ----------------------------------------------------------------------
+[debug] [2020-01-08T20:59:45.543Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-08T20:59:45.543Z] CLI Version:   7.11.0
+[debug] [2020-01-08T20:59:45.543Z] Platform:      darwin
+[debug] [2020-01-08T20:59:45.543Z] Node Version:  v10.16.3
+[debug] [2020-01-08T20:59:45.544Z] Time:          Wed Jan 08 2020 14:59:45 GMT-0600 (Central Standard Time)
+[debug] [2020-01-08T20:59:45.545Z] ----------------------------------------------------------------------
+[debug] [2020-01-08T20:59:45.545Z] 
+[debug] [2020-01-08T20:59:45.558Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-08T20:59:45.558Z] > authorizing via signed-in user
+[debug] [2020-01-08T20:59:45.558Z] [iam] checking project planit-e5a5d for permissions ["firebase.projects.get"]
+[debug] [2020-01-08T20:59:45.560Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/planit-e5a5d:testIamPermissions  
+
+[debug] [2020-01-08T20:59:45.772Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-08T20:59:45.775Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/planit-e5a5d  
+ 
+[debug] [2020-01-08T20:59:45.968Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/jessebadgley/projects/planit'...
+[info] 
+[debug] [2020-01-08T20:59:45.980Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/planit-e5a5d/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-01-08T20:59:46.362Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/jessebadgley/projects/planit/functions" for Cloud Functions...
+[debug] [2020-01-08T20:59:46.420Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-08T20:59:46.421Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-08T20:59:46.421Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-08T20:59:46.422Z] [worker-~diagnostic~-53f27f81-2b2a-4ff1-9929-6b86ddf78337]: Assigning socketPath: /var/folders/mh/rw3dwq3j65zb4x1lb6stdzhh0000gn/T/fire_emu_18474.sock
+[debug] [2020-01-08T20:59:46.422Z] [worker-~diagnostic~-53f27f81-2b2a-4ff1-9929-6b86ddf78337]: BUSY
+[info] i  hosting: Serving hosting files from: dist
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-01-08T20:59:46.947Z] [runtime-status] [18474] Functions runtime initialized. {"cwd":"/Users/jessebadgley/projects/planit/functions","node_version":"10.16.3"}
+[debug] [2020-01-08T20:59:46.949Z] [runtime-status] [18474] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-08T20:59:46.953Z] [runtime-status] [18474] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/jessebadgley/projects/planit/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-08T20:59:46.955Z] [runtime-status] [18474] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jessebadgley/projects/planit/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-08T20:59:46.956Z] [runtime-status] [18474] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jessebadgley/projects/planit/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[helloWorld]: http function initialized (http://localhost:5001/planit-e5a5d/us-central1/helloWorld).
+[debug] [2020-01-08T20:59:47.036Z] [worker-~diagnostic~-53f27f81-2b2a-4ff1-9929-6b86ddf78337]: IDLE
+[debug] [2020-01-08T21:00:01.181Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-08T21:00:01.181Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-08T21:00:01.182Z] Accepted request GET /planit-e5a5d/us-central1/helloWorld --> helloWorld
+[debug] [2020-01-08T21:00:01.191Z] [worker-pool] addWorker(helloWorld)
+[debug] [2020-01-08T21:00:01.191Z] [worker-pool] Adding worker with key helloWorld, total=1
+[debug] [2020-01-08T21:00:01.191Z] [worker-pool] submitWork(triggerId=helloWorld)
+[debug] [2020-01-08T21:00:01.192Z] [worker-helloWorld-def0924e-376b-4f1b-b048-dd16d385eb7d]: Assigning socketPath: /var/folders/mh/rw3dwq3j65zb4x1lb6stdzhh0000gn/T/fire_emu_18484.sock
+[debug] [2020-01-08T21:00:01.192Z] [worker-helloWorld-def0924e-376b-4f1b-b048-dd16d385eb7d]: BUSY
+[debug] [2020-01-08T21:00:02.105Z] [runtime-status] [18484] Functions runtime initialized. {"cwd":"/Users/jessebadgley/projects/planit/functions","node_version":"10.16.3"}
+[debug] [2020-01-08T21:00:02.108Z] [runtime-status] [18484] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-08T21:00:02.110Z] [runtime-status] [18484] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.0","resolution":"/Users/jessebadgley/projects/planit/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-08T21:00:02.112Z] [runtime-status] [18484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jessebadgley/projects/planit/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-08T21:00:02.113Z] [runtime-status] [18484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/jessebadgley/projects/planit/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-08T21:00:02.158Z] [runtime-status] [18484] Trigger "helloWorld" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-01-08T21:00:02.159Z] [runtime-status] [18484] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"}
+[debug] [2020-01-08T21:00:02.159Z] [runtime-status] [18484] Running helloWorld in mode HTTPS
+[debug] [2020-01-08T21:00:02.166Z] [runtime-status] [18484] Attempting to listen to socketPath: /var/folders/mh/rw3dwq3j65zb4x1lb6stdzhh0000gn/T/fire_emu_18484.sock
+[debug] [2020-01-08T21:00:02.175Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-08T21:00:02.190Z] [runtime-status] [18484] Ephemeral server handling GET request
+[debug] [2020-01-08T21:00:02.205Z] [runtime-status] [18484] Ephemeral server survived.
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-01-08T21:00:02.211Z] [worker-helloWorld-def0924e-376b-4f1b-b048-dd16d385eb7d]: IDLE
+[debug] [2020-01-08T21:00:02.211Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-08T21:00:52.613Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-08T21:00:52.614Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-08T21:00:52.614Z] Accepted request GET /planit-e5a5d/us-central1/helloWorld --> helloWorld
+[debug] [2020-01-08T21:00:52.614Z] [worker-pool] submitWork(triggerId=helloWorld)
+[debug] [2020-01-08T21:00:52.615Z] [worker-helloWorld-def0924e-376b-4f1b-b048-dd16d385eb7d]: Assigning socketPath: /var/folders/mh/rw3dwq3j65zb4x1lb6stdzhh0000gn/T/fire_emu_18484.sock
+[debug] [2020-01-08T21:00:52.615Z] [worker-helloWorld-def0924e-376b-4f1b-b048-dd16d385eb7d]: BUSY
+[debug] [2020-01-08T21:00:52.632Z] [runtime-status] [18484] Trigger "helloWorld" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-01-08T21:00:52.633Z] [runtime-status] [18484] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"}
+[debug] [2020-01-08T21:00:52.633Z] [runtime-status] [18484] Running helloWorld in mode HTTPS
+[debug] [2020-01-08T21:00:52.633Z] [runtime-status] [18484] Attempting to listen to socketPath: /var/folders/mh/rw3dwq3j65zb4x1lb6stdzhh0000gn/T/fire_emu_18484.sock
+[debug] [2020-01-08T21:00:52.638Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-08T21:00:52.717Z] [runtime-status] [18484] Ephemeral server handling GET request
+[debug] [2020-01-08T21:00:52.728Z] [runtime-status] [18484] Ephemeral server survived.
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-01-08T21:00:52.731Z] [worker-helloWorld-def0924e-376b-4f1b-b048-dd16d385eb7d]: IDLE
+[debug] [2020-01-08T21:00:52.731Z] [work-queue] {"queueLength":0,"workRunningCount":0}
