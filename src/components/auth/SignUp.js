@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signUp } from '../../redux/actions/authActions';
 
@@ -48,6 +48,9 @@ class SignUp extends Component {
 							{authError ? <p>{authError}</p> : null}
 						</div>
 					</div>
+					<p id='dont'>
+						Already have an accout? Sign in <Link to='/signin'>here</Link>
+					</p>
 				</form>
 			</div>
 		);

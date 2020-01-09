@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { signIn } from '../../redux/actions/authActions';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 class SignIn extends Component {
 	state = {
@@ -38,6 +38,9 @@ class SignIn extends Component {
 							{authError ? <p>{authError}</p> : null}
 						</div>
 					</div>
+					<p id='dont'>
+						Don't have an accout? Sign up <Link to='/signup'>here</Link>
+					</p>
 				</form>
 			</div>
 		);
