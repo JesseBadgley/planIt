@@ -48,10 +48,10 @@ class SignUp extends Component {
 							{authError ? <p>{authError}</p> : null}
 						</div>
 					</div>
-					<p id='dont'>
-						Already have an accout? Sign in <Link to='/signin'>here</Link>
-					</p>
 				</form>
+				<p id='dont'>
+					Already have an accout? Sign in <Link to='/signin'>here</Link>
+				</p>
 			</div>
 		);
 	}
